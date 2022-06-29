@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBDropdownItem, MDBContainer } from 'mdbreact';
-import hyuna from '../../assets/hyuna.jpeg';
+import hyuna from '../../assets/hyuna.png';
 import { MDBRow, MDBCol, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBCard, MDBListGroup, MDBListGroupItem, MDBInput } from 'mdbreact';
 import FlipCoin from '../CoinFlip/FlipCoin';
 
@@ -73,7 +73,7 @@ class Navbar extends Component {
                 <MDBNavbar color='indigo' dark expand='md' fixed='top' scrolling>
                     <MDBNavbarBrand href='/home' className='py-0 font-weight-bold'>
                         <img src={hyuna} height="50" alt="50" className="rounded-circle" />
-                        <strong className='align-middle'>Genshin Abyss Draft</strong>
+                        <strong className='align-middle'>X1 lixo?</strong>
                     </MDBNavbarBrand>
                     <MDBNavbarToggler
                         onClick={this.toggleCollapse('mainNavbarCollapse')}
@@ -87,7 +87,7 @@ class Navbar extends Component {
                                     to='#'
                                     onClick={this.closeCollapse('mainNavbarCollapse')}
                                 >
-                                    <strong>Print Page</strong>
+                                    <strong>Imprimir</strong>
                                 </MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem onClick={this.toggle2}>
@@ -96,7 +96,7 @@ class Navbar extends Component {
                                     to='#'
                                     onClick={this.closeCollapse('mainNavbarCollapse')}
                                 >
-                                    <strong>Coin Flip</strong>
+                                    <strong>Jogar Moeda</strong>
                                 </MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem onClick={this.toggle1}>
@@ -105,10 +105,10 @@ class Navbar extends Component {
                                     to='#'
                                     onClick={this.closeCollapse('mainNavbarCollapse')}
                                 >
-                                    <strong>Team Settings</strong>
+                                    <strong>Info do Time</strong>
                                 </MDBNavLink>
                             </MDBNavItem>
-                            <MDBNavItem onClick={this.toggle}>
+                            {/* <MDBNavItem onClick={this.toggle}>
                                 <MDBNavLink
                                     exact
                                     to='#'
@@ -116,31 +116,31 @@ class Navbar extends Component {
                                 >
                                     <strong>Draft Cycle Info</strong>
                                 </MDBNavLink>
-                            </MDBNavItem>
+                            </MDBNavItem> */}
                         </MDBNavbarNav>
                     </MDBCollapse>
                 </MDBNavbar>
 
 
                 <MDBModal isOpen={this.state.modal1} toggle={this.toggle1}>
-                    <MDBModalHeader toggle={this.toggle1}>Change Team Name</MDBModalHeader>
+                    <MDBModalHeader toggle={this.toggle1}>Mudar nome do time</MDBModalHeader>
                     <MDBModalBody>
                         <MDBInput onChange={this.handleChange} id="team1name" value={this.state.team1name} label="Team 1 Name" icon="users" />
                         <MDBInput onChange={this.handleChange} id="team2name" value={this.state.team2name} label="Team 2 Name" icon="users" />
                     </MDBModalBody>
                     <MDBModalFooter>
-                        <MDBBtn onClick={this.updateTeamName} color="orange">Save changes</MDBBtn>
+                        <MDBBtn onClick={this.updateTeamName} color="orange">Salvar</MDBBtn>
                     </MDBModalFooter>
                 </MDBModal>
 
                 <MDBModal isOpen={this.state.modal2} toggle={this.toggle2}>
-                    <MDBModalHeader toggle={this.toggle2}>Coin Flip</MDBModalHeader>
+                    <MDBModalHeader toggle={this.toggle2}>Girar moeda</MDBModalHeader>
                     <MDBModalBody>
                         <FlipCoin setClick={click => this.clickChild = click} />
                     </MDBModalBody>
                     <MDBModalFooter>
-                        <MDBBtn color="blue" onClick={() => this.clickChild()}>Flip Coin</MDBBtn>
-                        <MDBBtn color="secondary" onClick={this.toggle2}>Close</MDBBtn>
+                        <MDBBtn color="blue" onClick={() => this.clickChild()}>Girar moeda</MDBBtn>
+                        <MDBBtn color="secondary" onClick={this.toggle2}>Fechar</MDBBtn>
                     </MDBModalFooter>
                 </MDBModal>
 

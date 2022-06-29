@@ -11,8 +11,7 @@ export default class Footer extends Component {
             <div>
                 <MDBFooter className="fixed-bottom" color='indigo'>
                     <p className='footer-copyright mb-0 py-3 text-center'>
-                        &copy; {new Date().getFullYear()} Copyright:
-              <a href='#'> Coded by: 김현아#2808 </a>
+                        https://www.twitch.tv/B3lzeboss                    
                     </p>
                 </MDBFooter>
             </div>

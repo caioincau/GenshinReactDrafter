@@ -13,7 +13,7 @@ class App extends Component {
     const { collapseID } = this.state;
     return (
       <Provider store={Store}>
-        <Router>
+        <Router basename='/dist'>
           <div className='flyout'>
             {collapseID && overlay}
             <main style={{ marginTop: '4rem' }}>

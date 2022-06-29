@@ -88,10 +88,10 @@ class Main extends Component {
           </MDBRow>
           <MDBRow>
             <MDBCol size='4'>
-              <MDBInput type="textarea" label={this.state.team1name + " First Half Cards"} rows="3" icon="id-card-alt" />
+              <MDBInput type="textarea" label={this.state.team1name + " Primeira Metade"} rows="3" icon="id-card-alt" />
             </MDBCol>
             <MDBCol size='4'>
-              <MDBInput type="textarea" label={this.state.team1name + " Second Half Cards"} rows="3" icon="id-card-alt" />
+              <MDBInput type="textarea" label={this.state.team1name + " Segunda Metade"} rows="3" icon="id-card-alt" />
             </MDBCol>
             <MDBCol size='4'>
             </MDBCol>
@@ -110,10 +110,10 @@ class Main extends Component {
           </MDBRow>
           <MDBRow>
             <MDBCol size='4'>
-              <MDBInput type="textarea" label={this.state.team2name + " First Half Cards"} rows="3" icon="id-card-alt" />
+              <MDBInput type="textarea" label={this.state.team2name + " Primeira Metade"} rows="3" icon="id-card-alt" />
             </MDBCol>
             <MDBCol size='4'>
-              <MDBInput type="textarea" label={this.state.team2name + " Second Half Cards"} rows="3" icon="id-card-alt" />
+              <MDBInput type="textarea" label={this.state.team2name + " Segunda Metade"} rows="3" icon="id-card-alt" />
             </MDBCol>
             <MDBCol size='4'>
             </MDBCol>
@@ -159,10 +159,10 @@ class Main extends Component {
               <MDBTable hover small responsive>
                 <MDBTableHead>
                   <tr>
-                    <th>Chamber</th>
-                    <th>First Half Time</th>
-                    <th>Second Half Time</th>
-                    <th>Total Time</th>
+                    <th>Sala</th>
+                    <th>Primeiro lado</th>
+                    <th>Segundo lado</th>
+                    <th>Tempo Total</th>
                   </tr>
                 </MDBTableHead>
                 <MDBTableBody>
